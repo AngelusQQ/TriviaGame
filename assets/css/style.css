@@ -1,0 +1,74 @@
+body {
+  background-image: url("../images/wallpaper.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:#F5E8C8;
+}
+
+@media screen and (min-width: 0px) {
+    #header {
+        width:50%;
+    }
+}
+
+#header {
+  margin:0px 25vw;
+}
+
+.container {
+  float:left;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  width:74.89vw;
+  height:78.5vh;
+  margin-left:12.5vw;
+  margin-top:25px;
+}
+
+.category {
+  float:left;
+  font-size:2vw;
+  width:37.44vw;
+  height:39.25vh;
+  border-color: black;
+  border-width: 0.1px;
+  text-align:center;
+  line-height:40vh;
+}
+
+.category:hover {
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  font-size: 0px;
+}
+
+#categoryOne {
+  border-right-style: solid;
+  border-bottom-style: solid;
+}
+
+#categoryTwo {
+  border-bottom-style: solid;
+}
+
+#categoryThree {
+  border-right-style: solid;
+}
+
+#categoryOne:hover {
+  background-image: url(../images/animals.gif);
+}
+
+#categoryTwo:hover {
+  background-image: url(../images/food.gif);
+}
+
+#categoryThree:hover {
+  background-image: url(../images/politics.gif);
+}
+
+#categoryFour:hover {
+  background-image: url(../images/USA.gif);
+}
