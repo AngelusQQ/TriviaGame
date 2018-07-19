@@ -72,3 +72,7 @@ body {
 #categoryFour:hover {
   background-image: url(../images/USA.gif);
 }
+
+.answer, #question {
+  display: none;
+}
