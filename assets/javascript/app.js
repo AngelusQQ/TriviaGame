@@ -1,6 +1,6 @@
 var triviaSet = {
   category: "None",
-  Animal: {
+  Animals: {
     questions: [
       "What is the only mammal that can truly fly?",
       "What is the largest rodent found in North America?",
@@ -161,7 +161,7 @@ var triviaSet = {
     $('.category').css("display", "none");
     $('#categorySound')[0].play();
     var temp = this.category;
-    $('#question').text(this.temp.questions[0]);
+    $('#question').text(this[temp].questions[0]);
     $('#question').css("display", "inline");
   },
 
