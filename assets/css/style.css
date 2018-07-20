@@ -75,4 +75,6 @@ body {
 
 .answer, #question {
   display: none;
+  text-align:center;
+  font-size:2vw;
 }

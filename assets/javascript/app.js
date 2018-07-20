@@ -154,15 +154,19 @@ var triviaSet = {
   },
   score: 0,
   hints: 3,
+  counter: 0,
+  currentAnswer: null,
 
   startGame: function() {
     this.score = 0;
+
     this.hints = 3;
     $('.category').css("display", "none");
     $('#categorySound')[0].play();
     var temp = this.category;
-    $('#question').text(this[temp].questions[0]);
-    $('#question').css("display", "inline");
+    $('#question').text(this[temp].questions[counter]);
+    $('#question, .answer').css("display", "inline");
+    $('#choiceOne')
   },
 
   restartGame: function() {
