@@ -240,6 +240,7 @@ var triviaSet = {
     triviaSet.time -= 1;
     $('#timer').text("Timer: " + triviaSet.time);
     if(triviaSet.time === 0) {
+      clearTimeout(tempTimer);
       triviaSet.answerScreen();
     }
   }
