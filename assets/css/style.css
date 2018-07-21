@@ -73,8 +73,60 @@ body {
   background-image: url(../images/USA.gif);
 }
 
-.answer, #question {
+.answer, #question, #timer {
+  float: none;
   display: none;
   text-align:center;
-  font-size:2vw;
+  font-size:3vh;
+}
+
+#question {
+  margin-top:10vh;
+  margin-bottom:5vh;
+  font-style:oblique;
+  font-size:3.5vh;
+}
+
+#timer {
+  margin-bottom:5vh;
+}
+
+.answer {
+  padding: 2.5vh 0vh;
+  margin: 0vh 2vh;
+}
+
+.answer:hover {
+  border-style: solid;
+  border-width: 2px;
+  border-color:black;
+}
+
+#button {
+  display: none;
+  border-style:solid;
+  border-width:3px;
+  border-color:black;
+  padding:1%;
+  margin: 0vh 20vw;
+  text-align:center;
+  background-color:lightgray;
+  font-size:5vh;
+  margin-top:20vh;
+}
+
+#button:hover {
+  opacity:0.75;
+}
+
+#score {
+  text-align:center;
+  display:none;
+  font-size:5vh;
+}
+
+#gif {
+  display:none;
+  margin:auto;
+  width:50%;
 }
