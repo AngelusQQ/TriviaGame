@@ -192,6 +192,7 @@ var triviaSet = {
       $('#gif').attr("src", "assets/images/wrong.gif");
     }
     triviaSet.correct = false;
+    triviaSet.counter += 1;
     $('#gif').css("display", "block");
     setTimeout(triviaSet.nextQuestion, 3000);
   },
