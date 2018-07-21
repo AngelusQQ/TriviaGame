@@ -176,7 +176,7 @@ var triviaSet = {
   },
 
   scoreScreen: function() {
-    $('#question, .answer').css("display", "none");
+    $('#question, .answer', '#timer', '#gif').css("display", "none");
     $('.category').css("display", "none");
     $('#score, #button').css("display", "block");
     $('#score').text("Score: " + this.score);
@@ -203,7 +203,6 @@ var triviaSet = {
       theArray[i] = theArray[randomNumber];
       theArray[randomNumber] = temp;
     }
-    console.log(theArray);
   },
 
   checkAnswer: function (answer) {
@@ -216,11 +215,11 @@ var triviaSet = {
     this.randomizer(anArray);
     this.answerScreen();
     clearTimeout(tempTimer);
-    this.time = 30;
+    triviaSet.time = 30;
   },
 
   nextQuestion: function () {
-    this.time = 30;
+    triviaSet.time = 30;
     $('#timer').text("Timer: " + triviaSet.time);
     if(triviaSet.counter === 10) {
       triviaSet.scoreScreen();
@@ -234,7 +233,6 @@ var triviaSet = {
     $('#gif').css("display", "none");
     $('.answer').css("display", "block");
     tempTimer = setInterval(triviaSet.timer, 1000);
-
   },
 
   timer: function() {
