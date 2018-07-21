@@ -220,6 +220,7 @@ var triviaSet = {
   },
 
   nextQuestion: function () {
+    this.time = 30;
     $('#timer').text("Timer: " + triviaSet.time);
     if(triviaSet.counter === 10) {
       triviaSet.scoreScreen();
